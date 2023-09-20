@@ -1,0 +1,38 @@
+#include <iostream>
+
+/*Write a program finds out the largest number among three
+numbers entered by user and displays it with proper message.*/
+
+using namespace std;
+
+int main()
+{
+    // clear screen
+    system("CLS");
+
+    int numVal[3];
+    int largest = 0;
+    int arraylength = sizeof(numVal)/sizeof(int);
+
+    cout << "\t\t######################\t\tQuestion 2\t\t######################\t\t" << endl;
+    cout << "\n\t\tThis App will output the largest number after providing 3 numbers." << endl;
+    
+    for (int i= 0; i < arraylength; i++)
+    {
+        cout << "\n\t\tPlease enter number "<< i + 1 <<" : ";
+        cin >> numVal[i];
+        if (numVal[i] > largest)
+        {
+            largest = numVal[i]; 
+        }
+    }
+    cout << "\n\n\t\t "
+
+
+}
+
+
+
+
+
+

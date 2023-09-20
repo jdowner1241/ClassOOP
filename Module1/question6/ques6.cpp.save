@@ -1,0 +1,33 @@
+#include <iostream>
+/* Write a program to calculate the volume of a cube.*/
+
+using namespace std;
+
+int main()
+{
+    system("CLS");
+
+    int side;
+    float volume;
+
+
+    cout << "\n\t\t######################\t\tQuestion 6\t\t######################\t\t" << endl;
+    cout << "\n\t\tThis App will enter the size in meters for a cube. Then output the volume." << endl;
+
+    //Get the length of each side
+    cout << "\n\t\t**********************\t\tCube Length Entry\t\t**********************\t\t" << endl;
+    cout << "\n\t\tPlease enter the length of one side (m): ";
+    cin >> side;
+    cout << "\n\t\t___________________________________________________________________________________\t\t" << endl;
+
+    //Display the Area and Perimeter.
+    cout << "\n\n\t\t**********************\t\tDisplayed Volume of the Cube\t\t**********************\t\t" << endl;
+    volume = side * side * side;
+
+    cout << "\n\t\tThe Volume of the Cube is " << volume << " m ()3 square" << endl;
+    cout << "\n\n\t\t___________________________________________________________________________________\t\t" << endl;
+    cout << endl;
+    cout << endl;
+    cout << endl;
+
+}

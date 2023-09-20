@@ -1,0 +1,71 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+enum colours {blue, orange, red, yellow};
+enum scores {
+    team1 = 90,
+    team2 = 85,
+    team3 = 77,
+};
+
+struct {
+    string item;
+    int qty;
+    double price;
+} inventory;
+
+
+int main()
+{
+    int myInts[] = {12,3,5,62,43,11,42};
+    int arraylength = sizeof(myInts)/sizeof(int);
+
+    for (int i; i < arraylength; i++)
+    {
+        cout << i << " : " << myInts[i] << endl;
+    }
+
+    cout << endl;
+
+    string countryCode[2][4] =
+    {
+        {
+            "JMD","USD"
+        },
+        {
+            "KYD", "CAN", "EU", "PESOS"
+        }
+    };
+
+    for(int j = 0; j < 2; j++)
+    {
+        for(int k = 0; k < 4; k++)
+        {
+            cout << countryCode [j][k] << endl;
+        }
+    }
+
+    cout << endl;
+
+    colours favouriteColor;
+    favouriteColor = orange;
+    cout << "Not favourite color" << orange;
+
+    cout << endl;
+    scores s;
+    s = team2;
+
+    cout << endl;
+    inventory.item = "Potatoes";
+    inventory.qty = 150;
+    inventory.price = 1/79;
+
+    cout  << "Item " << inventory.item << endl;
+    cout  << "Quanity " << inventory.qty << endl;
+    cout  << "Price " << inventory.price << endl;
+
+
+
+}

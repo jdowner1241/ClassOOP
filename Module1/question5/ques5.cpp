@@ -1,0 +1,38 @@
+#include <iostream>
+
+
+/*Write a program to swap two numbers.*/
+
+using namespace std;
+
+int main()
+{
+    //clear screen
+    system ("CLS");
+
+    int num1;
+    int num2;
+    int temp;
+
+    cout << "\n\t\t######################\t\tQuestion 5\t\t######################\t\t" << endl;
+    cout << "\n\t\tThis App will swap two numbers" << endl;
+
+    //Get the numbers
+    cout << "\n\t\t**********************\t\tNumber Entry\t\t**********************\t\t" << endl;
+    cout << "\n\t\tPlease enter the first number: ";
+    cin >> num1;
+    cout << "\n\t\tPlease enter the second number: ";
+    cin >> num2;
+    cout << "\n\t\t___________________________________________________________________________________\t\t" << endl;
+
+    //Print Swapped numbers
+    cout << "\n\n\t\t**********************\t\tDisplayed Swap Numbers\t\t**********************\t\t" << endl;
+    temp = num1;
+    num1 = num2;
+    num2 = temp;
+    cout << "\n\t\tVariable: \"num1\" now has value: " << num1 << endl;
+    cout << "\n\t\tVariable: \"num2\" now has value: " << num2 << endl;
+    cout << "\n\n\t\t___________________________________________________________________________________\t\t" << endl;
+
+}
+

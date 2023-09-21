@@ -27,15 +27,15 @@ int main()
     {
 
 
+        do {
         //Get the temp as a base value without an assigned temperature.
         cout << "\n\t\t**********************\t\tTemperature Entry\t\t**********************\t\t" << endl;
         cout << "\n\t\tPlease enter the base Temperature: ";
         cin >> tempvalue;
         cout << "\n\t\tPlease select a temperature type. Your selected value would be converted to the opposite type.\t\t" << endl;
 
-        do {
             system("CLS");
-            cout << "\n\n\t\t**********************\t\ Base Temperature \t\t**********************\t\t" << endl;
+            cout << "\n\n\t\t**********************\t\t Base Temperature \t\t**********************\t\t" << endl;
             cout << "\n\t\tCurrent Base Temperature value: " << tempvalue;
             cout << "\n\n\t\t**********************\t\tSelection\t\t**********************\t\t" << endl;
             cout << "\n\t\t1) Celsius to Fahrenheit ";
@@ -73,9 +73,9 @@ int main()
         cout << "\n\n\t\t___________________________________________________________________________________\t\t" << endl;
         cout << "\n\t\tEnter 2 to exit loop, otherwise any key to continue: ";
         cin >> keeprun;
-
+        system("CLS");
     }
-            system("CLS");
+
     cout << "\n\n\t\t######################\t\t   End    \t\t######################\t\t" << endl;
     cout << endl;
     cout << endl;

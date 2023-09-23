@@ -1,0 +1,40 @@
+#include <iostream>
+
+/* Write a program with 3 variables, the first to store a pointer,
+second to store the reference to the pointer and thirdly store the value of the referenced pointer.*/
+
+using namespace std;
+
+
+int main()
+{
+    //clear screen
+    system("CLS");
+
+    int pointervalue = 10;
+    int* pointerptr = &pointervalue;
+    int& pointerRefVal = *pointerptr;
+
+    //Start App
+    cout << "\n\t\t######################\t\tQuestion 10\t\t######################\t\t" << endl;
+    cout << "\n\t\tThis App will have 3 variable to show the use cases of pointers." << endl;
+
+    // Display variable info
+    cout << "\n\n\t\t**********************\t\t Display Pointer variables \t\t**********************\t\t" << endl;
+    cout << "\n\t\tPointer Variable: " << pointervalue;
+    cout << "\n\t\tPointer Reference Variable: " << pointerptr;
+    cout << "\n\t\tPointer Reference Value Variable: " << pointerRefVal;
+    cout << "\n\n\t\t___________________________________________________________________________________\t\t" << endl;
+
+    //update the ref variable
+    pointerRefVal = 42;
+    cout << "\n\t\tThe \"pointerRefVal\" was modfied.";
+    cout << "\n\n\t\t___________________________________________________________________________________\t\t" << endl;
+
+    // Display updated variable info
+    cout << "\n\n\t\t**********************\t\t Display updated Pointer variables \t\t**********************\t\t" << endl;
+    cout << "\n\t\tPointer Variable: " << pointervalue;
+    cout << "\n\t\tPointer Reference Variable: " << pointerptr;
+    cout << "\n\t\tPointer Reference Value Variable: " << pointerRefVal;
+    cout << "\n\n\t\t___________________________________________________________________________________\t\t" << endl;
+}

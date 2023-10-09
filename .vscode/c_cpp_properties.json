@@ -5,8 +5,13 @@
       "includePath": [
         "${workspaceFolder}/**"
       ],
-      "compilerPath": "C:/msys64/mingw64/bin/gcc.exe",
-      "cStandard": "c89",
+      "defines":[
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE"
+      ],
+      "compilerPath": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+      "cStandard": "gnu17",
       "cppStandard": "c++98",
       "intelliSenseMode": "windows-gcc-x64",
       "compilerArgs": [
